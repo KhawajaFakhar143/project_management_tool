@@ -1,8 +1,10 @@
 package com.example.projectmanagementtool
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.Button
 
 class IntroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,6 +14,10 @@ class IntroActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
-
+        val buttonSignUp : Button = findViewById(R.id.btn_sign_up_intro)
+        buttonSignUp.setOnClickListener {
+            val intent = Intent(this,SignupActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
