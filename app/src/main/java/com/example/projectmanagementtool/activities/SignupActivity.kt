@@ -1,9 +1,10 @@
-package com.example.projectmanagementtool
+package com.example.projectmanagementtool.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.widget.Toolbar
+import com.example.projectmanagementtool.R
 
 class SignupActivity : AppCompatActivity() {
     private var toolbarSignUp : Toolbar? = null
@@ -29,5 +30,7 @@ class SignupActivity : AppCompatActivity() {
 
         toolbarSignUp?.setNavigationOnClickListener { onBackPressed() }
     }
+
+
 
 }

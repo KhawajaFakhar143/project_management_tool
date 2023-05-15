@@ -1,9 +1,9 @@
-package com.example.projectmanagementtool
+package com.example.projectmanagementtool.activities
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
+import com.example.projectmanagementtool.R
 
 class SigninActivity : AppCompatActivity() {
     private var toolbarSignIn : Toolbar? = null

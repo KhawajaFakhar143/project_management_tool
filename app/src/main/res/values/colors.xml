@@ -8,4 +8,7 @@
     <color name="colorBlue">#0C90F1</color>
     <color name="colorBlueDark">#0591F8</color>
     <color name="colorAccent">#0C90F1</color>
+
+    <color name="snackBar_error_color">#F72400</color>
+
 </resources>

@@ -1,10 +1,11 @@
-package com.example.projectmanagementtool
+package com.example.projectmanagementtool.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Button
+import com.example.projectmanagementtool.R
 
 class IntroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,12 +17,12 @@ class IntroActivity : AppCompatActivity() {
         )
         val buttonSignUp : Button = findViewById(R.id.btn_sign_up_intro)
         buttonSignUp.setOnClickListener {
-            val intent = Intent(this,SignupActivity::class.java)
+            val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
         val buttonSignIn: Button = findViewById(R.id.btn_sign_in_intro)
         buttonSignIn.setOnClickListener {
-            val intent = Intent(this,SigninActivity::class.java)
+            val intent = Intent(this, SigninActivity::class.java)
             startActivity(intent)
         }
     }
